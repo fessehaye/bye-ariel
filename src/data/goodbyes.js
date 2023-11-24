@@ -20,4 +20,8 @@ export default [
     {name: "Isabelle Rabideau", goodbye: "We'll miss you in the tech team Ariel! It's been great working with you (even from a distance) for the past year or so. Best wishes on your next adventures :)"},
     {name: "Herman Chandi", goodbye: "Ariel! Hope your future is filled with many more plushies and costumes. We are glad to have played a part on your journey to becoming a Canadian and I wish you the best in your future endeavors!"},
     {name: "Max", goodbye: "Thank you so much for stepping up and helping the team when you did! Best of luck in your new adventures, Ariel!"},
+    {
+        name: "Irene Fabris",
+        goodbye: "It has been a tremendous pleasure and joy working with you at UrbanLogiq! You are a woman of leadership and you've been a consistent, reliable, trustworthy teammate and a technically proficient software developer who stepped up to manage a team of devs in need of guidance. You have a wonderful gift in being able to bring people together and unify teams and your presence has drawn us closer within the tech department. I hope you know you are valued and that your fervor has encouraged me as a woman in tech! I thank you for honestly sharing constructive feedback and voicing the necessity for our company to both celebrate victories and acknowledge failures.  Above all, I wish you to be well and to take the best care of you, regardless of your work career ahead. Our career does not define our identity, and your value and worth remain just because of the person you are, Ariel - and that nobody can ever take away! I wish you the best, Ariel. May the journey ahead be more exciting and joyful than your mind and heart can possibly imagine."
+    },
 ]
