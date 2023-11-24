@@ -1,0 +1,23 @@
+---
+    const {name,goodbye} = Astro.props;
+---
+
+<section class="mt-[50vh] max-w-lg">
+    <p class="text-xl leading-10">
+        {goodbye}
+    </p>
+    <p class="text-poke-blue text-lg leading-10 mt-5">
+        - {name}
+    </p>
+</section>
+
+<style is:global>
+	@font-face {
+		font-family: Pokemon;
+		src: url("/PokmonDPPro.woff");
+	}
+
+	section {
+		font-family: 'Pokemon';
+	}
+</style>

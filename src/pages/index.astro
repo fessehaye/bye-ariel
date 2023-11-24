@@ -1,0 +1,38 @@
+---
+import Greeting from '../components/greeting.astro'
+import AudioControl from '../components/audio-control.astro'
+import goodbyes from '../data/goodbyes.js'
+import SimpleBG from '../components/simple-bg.astro'
+import Intro from '../components/intro.astro'
+import Outro from '../components/outro.astro'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Bye Ariel!</title>
+	</head>
+	<body class="bg-black text-poke-gray relative">
+		<AudioControl />
+		<Intro />
+		<main class="container relative max-w-2xl mx-auto">
+			<SimpleBG />
+			<div class="goodbye-container my-[50vh]">
+				{
+					goodbyes.map((person) => (
+						<Greeting
+							name={person.name}
+							goodbye={person.goodbye}
+						/>
+					))
+				}
+			</div>
+		</main>
+		<Outro />
+	</body>
+</html>
+
+
