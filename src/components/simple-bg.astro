@@ -12,19 +12,19 @@
     </div>
     <div class="poke-bubbles w-screen h-screen fixed top-0 left-0 opacity-80">
         <div class="bg-poke-white p-10 w-80 h-80 rounded-full absolute grid place-items-center top-[10%] left-[12%]">
-            <img src="/sp1.png" alt="pokemon image" class="brightness-0 h-40 w-40" />
+            <img src="/sp1.png" alt="pokemon image" class="brightness-0 h-56 w-56" />
         </div>
         <div class="bg-poke-white p-10 w-80 h-80 rounded-full absolute grid place-items-center top-[70%] left-[22%]">
-            <img src="/sp2.png" alt="pokemon image" class="brightness-0 h-40 w-40" />
+            <img src="/sp2.png" alt="pokemon image" class="brightness-0 h-56 w-56" />
         </div>
         <div class="bg-poke-white p-10 w-80 h-80 rounded-full absolute grid place-items-center top-[45%] right-[85%]">
-            <img src="/sp3.png" alt="pokemon image" class="brightness-0 h-40 w-40" />
+            <img src="/sp3.png" alt="pokemon image" class="brightness-0 h-56 w-56" />
         </div>
         <div class="bg-poke-white p-10 w-80 h-80 rounded-full absolute grid place-items-center top-[35%] right-[10%]">
-            <img src="/sp4.png" alt="pokemon image" class="brightness-0 h-40 w-40" />
+            <img src="/sp4.png" alt="pokemon image" class="brightness-0 h-56 w-56" />
         </div>
         <div class="bg-poke-white p-10 w-80 h-80 rounded-full absolute grid place-items-center top-[11%] right-[5%]">
-            <img src="/sp5.png" alt="pokemon image" class="brightness-0 h-40 w-40" />
+            <img src="/sp5.png" alt="pokemon image" class="brightness-0 h-56 w-56" />
         </div>
     </div>
 </div>
@@ -38,7 +38,7 @@
     
 	gsap.set('.icon', { opacity: 0 });
 
-    const bgAdmin = gsap.fromTo(
+    const bubbleBG = gsap.fromTo(
         ".poke-bubbles > div",
         {
             opacity: 0,
@@ -62,7 +62,7 @@
         }
     );
 
-    const tl = gsap.timeline({
+    const slideshow = gsap.timeline({
         defaults: { ease: 'power3.inOut' },
         repeat: -1,
         paused: true,
@@ -79,12 +79,12 @@
         },
     });
 
-    tl.to(".icon:nth-child(1)", { opacity: 1, duration: 2 })
-    tl.to(".icon:nth-child(1)", { opacity: 0, duration: 1, delay: 4})
-    tl.to(".icon:nth-child(2)", { opacity: 1, duration: 2 }, "<")
-    tl.to(".icon:nth-child(2)", { opacity: 0, duration: 1, delay: 4 })
-    tl.to(".icon:nth-child(3)", { opacity: 1, duration: 2 }, "<")
-    tl.to(".icon:nth-child(3)", { opacity: 0, duration: 1, delay: 4 })
+    slideshow.to(".icon:nth-child(1)", { opacity: 1, duration: 2 })
+    slideshow.to(".icon:nth-child(1)", { opacity: 0, duration: 1, delay: 4})
+    slideshow.to(".icon:nth-child(2)", { opacity: 1, duration: 2 }, "<")
+    slideshow.to(".icon:nth-child(2)", { opacity: 0, duration: 1, delay: 4 })
+    slideshow.to(".icon:nth-child(3)", { opacity: 1, duration: 2 }, "<")
+    slideshow.to(".icon:nth-child(3)", { opacity: 0, duration: 1, delay: 4 })
 
 
 </script>
